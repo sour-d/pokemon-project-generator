@@ -40,7 +40,9 @@ function generate_html () {
     MAIN_TEMPLATE=$( replace "$MAIN_TEMPLATE" "_PAGE_TITLE_" "Pokemon" )
 
     # removing all files and generating new files
-    rm ${LOCATION}/*.html &> /dev/null
+    rm -rf ./${LOCATION} &> /dev/null
+    mkdir ./${LOCATION}
+    tar xfz ../data/images.tar.gz --directory="./${LOCATION}"
     cp ../template/styles.css ${LOCATION}/styles.css
 
     # generate all card and sort out based on types
