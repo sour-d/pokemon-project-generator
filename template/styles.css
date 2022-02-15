@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.type {
+    color: white;
+}
+  
+.selected {
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: unset;
+    display: block;
+}
+
+.page-wrapper {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+.main-content {
+    margin-left: 20%;
+    padding: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+}
+  
+.pokemon {
+    background-color: rgb(244, 244, 244);
+    color: rgb(110, 110, 110);
+    width: 20%;
+    border: 0.12em solid hsl(0deg 0% 70%);
+    border-radius: 0.3em;
+    padding: 0.5em;
+    /* height: 450px; */
+}
+  
+.pokemon-img {
+    /* width: 200px; */
+    margin: 0 auto;
+    background-color: rgb(230, 230, 230);
+}
+  
+
+.pokemon-img img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-content > article > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0em;
+}
+
+.main-content > article > header > h2 {
+    font-size: 1.5em;
+}
+
+.pokemon-types > div {
+    display: inline-block;
+    padding: 0.3em 0.2em;
+    color: white;
+    border-radius: 0.2em;
+    font-size: 0.8em;
+}
+
+.pokemon-types > div:nth-child(1) {
+    margin-right: 0.3em;
+}
+
+
+/* sidebar */
+.sidebar {
+    background-color: rgb(244, 244, 244);
+    color: rgb(110, 110, 110);
+    height: 100%;
+    width: 20%;
+    position: fixed;
+}
+
+.sidebar ul {
+    padding-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sidebar ul li {
+    font-size: 1.3em;
+    padding: 0.5em 1.2em;
+}
+
+
+/* table style */
+.stats {
+    border-collapse: collapse;
+    width: 100%;
+    color: rgb(110, 110, 110);
+}
+
+.stats td ,
+.stats th {
+    border-top: 0.05em solid rgb(141 141 141 / 50%);
+    padding: 0.25em;
+}
+
+.stats tr:nth-child(1) td,
+.stats tr:nth-child(1) th {
+    border-top: none;
+}
+
+.stats td {
+    text-align: right;
+}
+
+.stats th {
+    text-align: left;
+}
+
+/* colors  */
+.grass {
+    background-color: mediumseagreen;
+}
+
+.poison {
+    background-color: mediumpurple;
+}
+
+.fire {
+    background-color: goldenrod;
+}
+
+.flying {
+    background-color: steelblue;
+}
+
+.water {
+    background-color: dodgerblue;
+}
+
+.bug {
+    background-color: brown;
+}
+
+.normal {
+    background-color: gray;
+}
+
+.ground {
+    background-color: peru;
+}
+
+.fairy {
+    background-color: hotpink;
+}
+
+.fighting {
+    background-color: crimson;
+}
+
+.electric {
+    background-color: hsl(51deg 73% 50%);
+}
+
+.psychic {
+    background-color: orange;
+}
+
+.rock {
+    background-color: dimgray;
+}
+
+.ice {
+    background-color: darkcyan;
+}
+
+.dragon {
+    background-color: mediumaquamarine;
+}
+
+.ghost {
+    background-color: black;
+}
+
+.dark {
+    background-color: slategray;
+}
+
+.steel {
+    background-color: steelblue;
+}
+
+.all {
+    background-color: dimgray;
+}
+
+li.sidebar-grass:hover {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+li.sidebar-poison:hover {
+    background-color: mediumpurple;
+    color: white;
+}
+
+li.sidebar-fire:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+li.sidebar-flying:hover {
+    background-color: steelblue;
+    color: white;
+}
+
+li.sidebar-water:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+li.sidebar-bug:hover {
+    background-color: brown;
+    color: white;
+}
+
+li.sidebar-normal:hover {
+    background-color: gray;
+    color: white;
+}
+
+li.sidebar-ground:hover {
+    background-color: peru;
+    color: white;
+}
+
+li.sidebar-fairy:hover {
+    background-color: hotpink;
+    color: white;
+}
+
+li.sidebar-fighting:hover {
+    background-color: crimson;
+    color: white;
+}
+
+li.sidebar-electric:hover {
+    background-color: hsl(51deg 73% 50%);
+    color: white;
+}
+
+li.sidebar-psychic:hover {
+    background-color: orange;
+    color: white;
+}
+
+li.sidebar-rock:hover {
+    background-color: dimgray;
+    color: white;
+}
+
+li.sidebar-ice:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+li.sidebar-dragon:hover {
+    background-color: mediumaquamarine;
+    color: white;
+}
+
+li.sidebar-ghost:hover {
+    background-color: black;
+    color: white;
+}
+
+li.sidebar-dark:hover {
+    background-color: slategray;
+    color: white;
+}
+
+li.sidebar-steel:hover {
+    background-color: steelblue;
+    color: white;
+}
+
+li.sidebar-all:hover {
+    background-color: dimgray;
+    color: white;
+}
+
+.active-grass {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.active-poison {
+    background-color: mediumpurple;
+    color: white;
+}
+
+.active-fire {
+    background-color: goldenrod;
+    color: white;
+}
+
+.active-flying {
+    background-color: steelblue;
+    color: white;
+}
+
+.active-water {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.active-bug {
+    background-color: brown;
+    color: white;
+}
+
+.active-normal {
+    background-color: gray;
+    color: white;
+}
+
+.active-ground {
+    background-color: peru;
+    color: white;
+}
+
+.active-fairy {
+    background-color: hotpink;
+    color: white;
+}
+
+.active-fighting {
+    background-color: crimson;
+    color: white;
+}
+
+.active-electric {
+    background-color: hsl(51deg 73% 50%);
+    color: white;
+}
+
+.active-psychic {
+    background-color: orange;
+    color: white;
+}
+
+.active-rock {
+    background-color: dimgray;
+    color: white;
+}
+
+.active-ice {
+    background-color: darkcyan;
+    color: white;
+}
+
+.active-dragon {
+    background-color: mediumaquamarine;
+    color: white;
+}
+
+.active-ghost {
+    background-color: black;
+    color: white;
+}
+
+.active-dark {
+    background-color: slategray;
+    color: white;
+}
+
+.active-steel {
+    background-color: steelblue;
+    color: white;
+}
+
+.active-all {
+    background-color: dimgray;
+    color: white;
+}
